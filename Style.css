@@ -154,3 +154,24 @@
     object-fit: cover; /* Ini kuncinya agar foto otomatis terpotong rapi, bukan gepeng */
     display: block;
 }
+
+/* Pengaturan khusus untuk layar HP */
+@media (max-width: 600px) {
+    .book {
+        width: 80vw; /* Lebar buku jadi 80% lebar layar HP */
+        height: 60vh; /* Tinggi buku menyesuaikan */
+        rotate: 0deg; /* Hilangkan rotasi miring agar lebih mudah dibaca di HP */
+    }
+    
+    .front, .back {
+        padding: 1em; /* Kecilkan padding agar teks tidak sempit */
+    }
+    
+    p {
+        font-size: 0.75em; /* Kecilkan sedikit ukuran tulisan di HP */
+    }
+    
+    h2 {
+        font-size: 1em;
+    }
+}
